@@ -34,8 +34,6 @@ router.param('model', (req, res, next) => {
 });
 
 
-
-
 router.get('/:model', bearer, acl('read'), handleGetAll);
 router.get('/:model/:id', bearer, acl('read'), handleGetOne);
 router.post('/:model', bearer, acl('create'), handleCreate);

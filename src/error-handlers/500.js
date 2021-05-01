@@ -13,7 +13,7 @@ module.exports = function (err, req, res, next) {
 
   // Sometimes, errors come in as an object, others as a string
   const error = err.message ? err.message : err;
-  console.log("log:", err.message)
+  console.log("log:", err)
   const errorObject = {
     status: 500,
     message: error
